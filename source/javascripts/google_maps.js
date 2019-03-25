@@ -40,6 +40,6 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(27.929517, -82.511970),
         map: map,
-        title: 'Located in Tampa, Florida!'
+        title: 'Located in New Haven, CT!'
     });
 }

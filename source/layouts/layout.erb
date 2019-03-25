@@ -45,7 +45,7 @@
   
   <!-- Stylesheets -->
   <%= stylesheet_link_tag "bootstrap.css" %>
-  <%= stylesheet_link_tag "ionicons.css" %>
+  <%= stylesheet_link_tag "fonts/ionicons.css" %>
   <%= stylesheet_link_tag "pe-icon-7-stroke.css" %>
   <%= stylesheet_link_tag "magnific-popup.css" %>
   <%= stylesheet_link_tag "logoiconfont.css" %>
@@ -64,29 +64,6 @@
   <!--<link rel="alternate stylesheet" type="text/css" href="css/colors/seagul.css" title="seagul">-->
 
   <%= stylesheet_link_tag 'application', media: "all" %>
-
-  <script>
-      !function() {
-          var t;
-          if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-              t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-              t.factory = function(e) {
-                  return function() {
-                      var n;
-                      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-                  };
-              }, t.methods.forEach(function(e) {
-              t[e] = t.factory(e);
-          }), t.load = function(t) {
-              var e, n, o, i;
-              e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-                  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
-                  n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-          });
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('di4et8rgkcup');
-  </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36624287-2"></script>
   <script>
@@ -128,7 +105,7 @@
 
 <%= javascript_include_tag "bootstrap.min.js" %>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
 <%= javascript_include_tag "google_maps_stock.js" %>
 <%= javascript_include_tag "particles.min.js" %>
 <%= javascript_include_tag "particlesRun" %>
