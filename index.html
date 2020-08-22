@@ -34,6 +34,7 @@
   <!-- Royal Preloader -->
   <script src="/javascripts/royal_preloader.min.js"></script>
   
+<!-- TODO: Move this into a javascript file-->
   <script type="text/javascript">
     Royal_Preloader.config({
       mode: 'number',
@@ -49,7 +50,7 @@
   <link href="/stylesheets/magnific-popup.css" rel="stylesheet" />
   <link href="/stylesheets/logoiconfont.css" rel="stylesheet" />
   <link href="/stylesheets/style.css" rel="stylesheet" />
-  <link href="/stylesheets/colors/blue.css" rel="stylesheet" />
+  <link href="/stylesheets/base-light.css" rel="stylesheet" />
   
   
   <!--<link type="text/css" href="css/colors/blue.css" />-->
@@ -91,7 +92,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand scroll-link" href="#home" data-id="home">
-            <a href="/"><img src="/images/logo_black.png" class="logo1 topReveal" alt="Logo" /></a>
+            <a href="/"><img src="/images/logo.png" class="logo1 topReveal" alt="Logo" /></a>
           </a>
         </div>
 
@@ -222,89 +223,59 @@
 
 <!-- Begin Services -->
 <section id="services" class="background2 section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 section-title text-center">
-        <h2>Products + Services</h2>
-        <span class="section-divider"></span>
-      </div>
-    </div>
-
-    <div class="row">
-
-      <!-- Item 1 -  web -->
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-  <div class="services-box leftReveal">
-    <span class="pe-7s-airplay services-icon"></span>
-    <h3 class="service-name">1. Web Development</h3>
-    <p class="text-small">Ruby on Rails, Java, PHP, NodeJS, React, Ember. Frameworks like Bootstrap, Magento, Shopify, Wordpress
-      <!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item1-services">Info</button>-->
-  </div>
-</div><!-- /.column -->
-
-      <!-- Item 2 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
-  <div class="services-box topReveal">
-    <span class="pe-7s-phone services-icon"></span>
-    <h3 class="service-name">2. Desktop Software</h3>
-    <p class="text-small">Java / JavaFX, C++, Ruby, React-Native, Python, Swift, Objective-C and Swift, Bash and MIPS</p>
-    <!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item2-services">Info</button>-->
-  </div>
-</div><!-- /.column -->
-
-
-      <!-- Item 3 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
-  <div class="services-box rightReveal">
-	  <span class="services-badge badge">New</span>
-	  <span class="pe-7s-camera services-icon"></span>
-    <h3 class="service-name">3. Social Media</h3>
-    <p class="text-small">
-      We grow your following until you dominate the Social-Media landscape.<br>
-      Just like the President.</p>
-    <!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item3-services">Info</button>-->
-  </div>
-</div><!-- /.column -->
-
-
-      <!-- Item 4 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
-  <div class="services-box leftReveal">
-    <span class="services-badge badge">New</span>
-    <span class="pe-7s-anchor services-icon"></span>
-    <h3 class="service-name">4. Brand + Logo Development</h3>
-    <p class="text-small">Logo Design and Brand Development, keeping your 'look' consistent across all your Blue Helmet Products. </p>
-    <!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item4-services">Info</button>-->
-  </div>
-</div><!-- /.column -->
-
-
-      <!-- Item 5 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
-  <div class="services-box bottomReveal">
-    <span class="pe-7s-users services-icon"></span>
-    <h3 class="service-name">5. Digital + Print Marketing Products</h3>
-    <p class="text-small">We can put your logo on anything you can think of..</p>
-    <!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item5-services">Info</button>-->
-  </div>
-</div><!-- /.column -->
-
-
-      <!-- Item 6 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
-  <div class="services-box rightReveal">
-    <span class="services-badge badge">New</span>
-    <span class="pe-7s-volume services-icon"></span>
-    <h3 class="service-name">6. Photography</h3>
-    <p class="text-small">Professional photographers ready to capture your best!
-      Say Cheese!</p>
-    <!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item6-services">Info</button>-->
-  </div>
-</div><!-- /.column -->
-<!-- Item 6 Modal -->
-
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>Products + Services</h2>
+				<span class="section-divider"></span>
+			</div>
+		</div>
+		
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<div class="services-box leftReveal">
+					<span class="pe-7s-airplay services-icon"></span>
+					<h3 class="service-name">1. Websites</h3>
+					<p class="text-small">Simple and affordable website development. Attract customers and grow your business.</p>
+					<p class="text-small">Quickly get your web presence up and running!</p>
+					<!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item1-services">Info</button>-->
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+				<div class="services-box topReveal">
+					<span class="pe-7s-phone services-icon"></span>
+					<h3 class="service-name">2. Web Applications</h3>
+					<p class="text-small">Web-application development, including contacless order + fulfillment system with
+						Square, Stripe and Venmo integration</p>
+					<p class="text-small">PHP, Wordpress, Shopify, Ruby on Rails and much more...</p>
+					<!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item2-services">Info</button>-->
+				</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+				<div class="services-box rightReveal">
+<!--					<span class="services-badge badge">New</span>-->
+					<span class="pe-7s-camera services-icon"></span>
+					<h3 class="service-name">3. Social Media</h3>
+					<p class="text-small">
+						Grow your social media presence! Proven social media marketing strategies that lead to tremendous business
+						growth!<br>
+					<p class="text-small">Inquire for examples of business we have grown via social media campaigns.</p>
+					<!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item3-services">Info</button>-->
+				</div>
+			</div>
+			
+			
+			<!-- Item 4 -->
+			
+			<!-- Item 5 -->
+			
+			<!-- Item 6 -->
+		</div>
+	</div>
 </section>
 
 <section class="background1" id="ideology">
@@ -366,22 +337,22 @@
 
 <!-- WORK -->
 <section id="work" class="background1 section-padding-top">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 section-title text-center">
-        <h2>Work</h2>
-        <span class="section-divider mb15"></span>
-        <p class="mb30 scaleReveal">We do awesome stuff.</p>
-      </div><!-- /.column -->
-    </div><!-- /.row -->
-    <div class="row">
-    <div style="-webkit-flex-flow: row wrap;" id="thework">
-
-      <!-- Item 1 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="3">
-        <div class="portfolio-image-holder"><img src="/images/work/1.png" class="img-responsive portfolio-image" alt="1" /></div>
-        <span class="portfolio-badge badge">Rails</span>
-        <span class="portfolio-hover">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>Work</h2>
+				<span class="section-divider mb15"></span>
+				<p class="mb30 scaleReveal">We do awesome stuff.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div style="-webkit-flex-flow: row wrap;" id="thework">
+				
+				<!-- Item 1 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="3">
+					<div class="portfolio-image-holder"><img src="/images/work/1.png" class="img-responsive portfolio-image" alt="1" /></div>
+					<span class="portfolio-badge badge">Rails</span>
+					<span class="portfolio-hover">
 						<span>
 							<a href="http://bethlehemvineyard.com" target="_blank">
 								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
@@ -389,13 +360,13 @@
 							<span class="project-title no-margin-bottom mt10">The Bethlehem Vineyard</span>
 						</span>
 					</span>
-      </div><!-- /.column -->
-
-      <!-- Item 2 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity" data-my-order="6">
-        <div class="portfolio-image-holder"><img src="/images/work/2.png" class="img-responsive portfolio-image" alt="2" /></div>
-        <span class="portfolio-badge badge">Rails</span>
-        <span class="portfolio-hover">
+				</div>
+				
+				<!-- Item 2 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity" data-my-order="6">
+					<div class="portfolio-image-holder"><img src="/images/work/2.png" class="img-responsive portfolio-image" alt="2" /></div>
+					<span class="portfolio-badge badge">Rails</span>
+					<span class="portfolio-hover">
 						<span>
 							<a href="http://woodburyflea.net/" target="_blank">
 								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
@@ -403,43 +374,29 @@
 							<span class="project-title no-margin-bottom mt10">The Woodbury Flea Market</span>
 						</span>
 					</span>
-      </div><!-- /.column -->
-
-      <!-- Item 3 -->
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix identity" data-my-order="4">
-        <div class="portfolio-image-holder"><img src="/images/work/3.png" class="img-responsive portfolio-image" alt="3" /></div>
-        <span class="portfolio-badge badge">Rails</span>
-        <span class="portfolio-hover">
+				</div>
+				
+				<!-- Item 3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix identity" data-my-order="4">
+					<div class="portfolio-image-holder"><img src="/images/work/3.png" class="img-responsive portfolio-image" alt="3" /></div>
+					<span class="portfolio-badge badge">Rails</span>
+					<span class="portfolio-hover">
 						<span>
 							<a href="https://www.athankaloidis.com/" target="_blank">
 								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>
 							</a>
+							<a href="http://vkaloidis.herokuapp.com/p/raw/akmemorial" class="view_work" id="akmemorial_modal" title="Athan Kaloidis Memorial Foundation">
+									<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
 							<span class="project-title no-margin-bottom mt10">Athan Kaloidis Memorial Foundation</span>
 						</span>
 					</span>
-      </div><!-- /.column -->
-
-      <!-- Item 4 -->
-<!--      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="5">-->
-<!--        <div class="portfolio-image-holder"></div>-->
-<!--        <span class="portfolio-badge badge">Rails</span>-->
-<!--        <span class="portfolio-hover">-->
-<!--						<span>-->
-<!--							<a href="https://highland-brass.herokuapp.com" target="_blank">-->
-<!--								<span class="portfolio-links"><span class="ion-ios-arrow-right portfolio-links-icons"></span></span>-->
-<!--							</a>-->
-<!--							<a href="/work/4.png" class="zoom" title="Highland Brass Co.">-->
-<!--								<span class="portfolio-links"><span class="ion-arrow-expand portfolio-links-icons"></span></span>-->
-<!--							</a>-->
-<!--							<span class="project-title no-margin-bottom mt10">Highland Brass Co.</span>-->
-<!--						</span>-->
-<!--					</span>-->
-<!--      </div> -->
-
-
-    </div><!-- /.row -->
-  </div><!-- /.container -->
-</section><!-- /.section -->
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- LOGIN -->
 
@@ -449,7 +406,7 @@
       <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 section-title text-center">
         <h2>Contact</h2>
         <span class="section-divider mb15"></span>
-        <p class="no-margin scaleReveal">Contact us using the contact form below </p>
+        <p class="no-margin scaleReveal">Give us a call, or send us a text or email to discuss your next project! </p>
 
       </div><!-- /.column -->
     </div><!-- /.row -->
@@ -458,8 +415,8 @@
         <h5 class="heading-1 mb20">Located</h5>
         <h4 class="mb15">New Haven, CT</h4>
 	      <h5 class="heading-1 mb20">Contact</h5>
-        <p class="text-xs-small mb5"><strong class="text-switch">Email:</strong> blue.helmet.software@gmail.com</p>
-        <p class="text-xs-small mb5"><strong class="text-switch">Phone:</strong> +1 (203) 578-0346</p>
+        <p class="mb5"><a href="mailto:blue.helmet.software@gmail.com">blue.helmet.software@gmail.com</a></p>
+        <p class="mb5"><a href="tel:203-296-3151">+1 (203) 296-3161</a></p>
       </div><!-- /.column -->
     </div><!-- /.row -->
   </div><!-- /.container -->
@@ -496,15 +453,6 @@
 <script src="/javascripts/form-validator.min.js"></script>
 <script src="/javascripts/jquery.inview.min.js"></script>
 <script src="/javascripts/jquery.countTo.js"></script>
-<script type="text/javascript">
-  /* ---- Counter (our count) ---- */
-  $('#ourcount').one('inview', function (event, isInView) {
-    if(isInView) {
-      $('.timer').countTo({speed: 3000});
-    }
-  });
-</script>
-
 <script src="/javascripts/jquery.magnific-popup.min.js"></script>
 <script src="/javascripts/scrollreveal.min.js"></script>
 <script src="/javascripts/main.js"></script>
