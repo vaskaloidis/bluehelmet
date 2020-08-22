@@ -18,36 +18,35 @@
 	
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	
-	<!-- Devicon Icons -->
 	<%= stylesheet_link_tag "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" %>
 	
-	<!-- Royal Preloader CSS -->
 	<%= stylesheet_link_tag "royal_preloader" %>
 	
-	<!-- jQuery Files -->
 	<!-- <script type="text/javascript" src="httdp://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery' %> -->
 	<%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" %>
 	
 	<%= javascript_include_tag "application.js" %>
 	
 	<script type="text/javascript">
-		$('.btn_open_woodburyflea').click(function () {
-			console.log("We detected the click")
-			// Send the src on click of button to the iframe. Which will make it load.
-			$(".modal_content").find('iframe').attr("src", "http://vkaloidis.herokuapp.com/p/raw/woodburyflea");
-			$('.modal').modal({show: true});
-			// Hide the loading message
-			$(".modal_content").find('iframe').load(function () {
+		function open_work_modal(short_name, pretty_name, visit_url) {
+			project_url = 'http://vkaloidis.herokuapp.com/p/raw/'.concat(short_name)
+			$("#modal_title").text(pretty_name);
+			// e.preventDefault();
+			$("#work-modal-iframe").attr("src", project_url);
+			$('.work-modal').appendTo("body").modal('show');
+			$('#visit_project_link').attr("href", (visit_url));
+			$("#work-modal-iframe").load(function () {
 				$('.loading').hide();
 			});
-		})
+		}
+		function resize_work_iframe() {
+			$("#work-modal-iframe").height($("#work_modal_content").height()-25);
+		}
 	</script>
 	
-	<!-- Parallax File -->
 	<%= javascript_include_tag "parallax.min.js" %>
 	<%#= javascript_include_tag "drift.js" %>
 	
-	<!-- Royal Preloader -->
 	<%= javascript_include_tag "royal_preloader.min.js" %>
 	
 	<!-- TODO: Move this into a javascript file-->
@@ -59,27 +58,24 @@
 		});
 	</script>
 	
-	<!-- Stylesheets -->
 	<%= stylesheet_link_tag "bootstrap.css" %>
 	<%= stylesheet_link_tag "ionicons.css" %>
 	<%= stylesheet_link_tag "pe-icon-7-stroke.css" %>
 	<%= stylesheet_link_tag "magnific-popup.css" %>
 	<%= stylesheet_link_tag "logoiconfont.css" %>
 	<%= stylesheet_link_tag "style.css" %>
-	<%#= stylesheet_link_tag "colors/seagul.css" %>
 	<%= stylesheet_link_tag "base-light.css" %>
+	<%= stylesheet_link_tag "application.css" %>
 	
 	
-	<!--<link type="text/css" href="css/colors/blue.css" />-->
-	<!--<link type="text/css" href="base-light.css" />-->
-	<!--<link rel="alternate .cssstylesheet" type="text/css" href="css/colors/green.css" title="green">-->
-	<!--<link rel="alternate stylesheet" type="text/css" href="css/colors/orange.css" title="orange">-->
-	<!--<link rel="alternate stylesheet" type="text/css" href="css/colors/red.css" title="red">-->
-	<!--<link rel="alternate stylesheet" type="text/css" href="css/colors/orangelight.css" title="orangelight">-->
-	<!--<link rel="alternate stylesheet" type="text/css" href="css/colors/pinkish.css" title="pinkish">-->
-	<!--<link rel="alternate stylesheet" type="text/css" href="css/colors/seagul.css" title="seagul">-->
-	
-	<%= stylesheet_link_tag 'application', media: "all" %>
+	<!-- css/colors/blue.css -->
+	<!-- base-light.css -->
+	<!-- css/colors/green.css -->
+	<!-- css/colors/orange.css -->
+	<!-- css/colors/red.css -->
+	<!-- css/colors/orangelight.cs"-->
+	<!-- css/colors/pinkish.css -->
+	<!-- css/colors/seagul.css -->
 	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36624287-2"></script>
 	<script>
@@ -90,23 +86,18 @@
 		}
 		
 		gtag('js', new Date());
-		
 		gtag('config', 'UA-36624287-2');
 	</script>
 	
 	<script type="text/javascript">
-
+      $('#work-modal-iframe').load(function() {
+      	consoel.log("Resizing iframe")
+          // this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+      });
 	</script>
-
+	
 </head>
-
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-	<div class="modal-dialog modal-lg" role="document">
-		<div id="modal_content" class="modal-content">
-			<iframe></iframe>
-		</div>
-	</div>
-</div>
+	<%= partial 'work_modal' %>
 
 <body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
 
@@ -136,8 +127,8 @@
 	</div>
 </footer>
 
+<%# TODO: Optimize javascript files %>
 <%= javascript_include_tag "bootstrap.min.js" %>
-
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyArLNT3t4qsJEBmR0R9P_6ueLIQz0Jvt1M&callback=initMap" async defer></script>
 <%= javascript_include_tag "google_maps_stock.js" %>
 <%= javascript_include_tag "particles.min.js" %>

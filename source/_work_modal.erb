@@ -1,0 +1,23 @@
+<div class="modal work-modal fade" tabindex="-1" style="display:none" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div id="work_modal_content" class="modal-content">
+			<div class="modal-header">
+				<span class="pe-7s-anchor services-icon-2 modal-icon"></span>
+				<h4 class="service-title" id="modal_title"></h4>
+			</div>
+			
+			<div class="modal-body" id="work-modal-body">
+				<div style="margin-bottom:10px;float:right">
+				<a class="btn btn-success" id="visit_project_link">Visit Project</a>
+				<button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Close</button><br>
+				</div>
+				<iframe onload="resize_work_iframe()" id="work-modal-iframe"></iframe>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		
+		</div>
+	</div>
+</div>
