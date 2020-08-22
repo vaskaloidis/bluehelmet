@@ -1,12 +1,16 @@
-.navbar-default {
-    background-color: rgb(34, 34, 34);
+.navbar-header {
+    margin-top:10px;
+    /*background-color: rgb(34, 34, 34);*/
+}
+
+body {
+    background-color: white;
 }
 
 .logo1 {
     width:315px;
-    height:97px;
+    /*height:97px;*/
 }
-
 
 body{
     margin-top:10px;

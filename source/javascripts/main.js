@@ -65,17 +65,34 @@ function submitMSG(valid, msg) {
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
 
+$('#akmemorial_modal').magnificPopup({
+    delegate: 'a.view_work',
+    iframe: {
+        markup: '<div class="mfp-iframe-scaler">'+
+          '<div class="mfp-close"></div>'+
+          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+        // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+        srcAction: 'iframe_src',
+        mainClass: 'mfp-fade',
+    }
+});
+
 /* ---- our work gallery ---- */
 $('#work').magnificPopup({
     delegate: 'a.zoom',
-    type: 'image',
+    type: 'iframe',
     fixedContentPos: false,
     removalDelay: 300,
     mainClass: 'mfp-fade',
-    gallery: {
-        enabled: true,
-        preload: [0,2]
-    }
+    iframe: {
+        markup: '<div class="mfp-iframe-scaler">' +
+          '<div class="mfp-close"></div>' +
+          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+    },
+    srcAction: 'iframe_src', // Templating object key. First part defines CSS selector,
+    // second attribute. "iframe_src" means: find "iframe" and set attribute "src".
 });
 
 /* ---- popup image ---- */

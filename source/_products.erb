@@ -1,31 +1,59 @@
 <!-- Begin Services -->
 <section id="services" class="background2 section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 section-title text-center">
-        <h2>Products + Services</h2>
-        <span class="section-divider"></span>
-      </div>
-    </div>
-
-    <div class="row">
-
-      <%= partial 'web' %>
-
-      <!-- Item 2 -->
-      <%= partial 'app' %>
-
-      <!-- Item 3 -->
-      <%= partial 'social' %>
-
-      <!-- Item 4 -->
-      <%= partial 'brand' %>
-
-      <!-- Item 5 -->
-      <%= partial 'marketing' %>
-
-      <!-- Item 6 -->
-      <%= partial 'photo' %>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>Products + Services</h2>
+				<span class="section-divider"></span>
+			</div>
+		</div>
+		
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<div class="services-box leftReveal">
+					<span class="pe-7s-airplay services-icon"></span>
+					<h3 class="service-name">1. Websites</h3>
+					<p class="text-small">Simple and affordable website development. Attract customers and grow your business.</p>
+					<p class="text-small">Quickly get your web presence up and running!</p>
+					<!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item1-services">Info</button>-->
+				</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+				<div class="services-box topReveal">
+					<span class="pe-7s-phone services-icon"></span>
+					<h3 class="service-name">2. Web Applications</h3>
+					<p class="text-small">Web-application development, including contacless order + fulfillment system with
+						Square, Stripe and Venmo integration</p>
+					<p class="text-small">PHP, Wordpress, Shopify, Ruby on Rails and much more...</p>
+					<!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item2-services">Info</button>-->
+				</div>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+				<div class="services-box rightReveal">
+<!--					<span class="services-badge badge">New</span>-->
+					<span class="pe-7s-camera services-icon"></span>
+					<h3 class="service-name">3. Social Media</h3>
+					<p class="text-small">
+						Grow your social media presence! Proven social media marketing strategies that lead to tremendous business
+						growth!<br>
+					<p class="text-small">Inquire for examples of business we have grown via social media campaigns.</p>
+					<!--<button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item3-services">Info</button>-->
+				</div>
+			</div>
+			
+			
+			<!-- Item 4 -->
+			<%#= partial 'brand' %>
+			
+			<!-- Item 5 -->
+			<%#= partial 'marketing' %>
+			
+			<!-- Item 6 -->
+			<%#= partial 'photo' %>
+		</div>
+	</div>
 </section>
