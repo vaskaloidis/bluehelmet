@@ -6,12 +6,21 @@
 				<h4 class="service-title" id="modal_title"></h4>
 			</div>
 			
-			<div class="modal-body" id="work-modal-body">
+			<div class="modal-body" id="work-modal-body" style="padding-top:10px">
+				
 				<div style="margin-bottom:10px;float:right">
-				<a class="btn btn-success" id="visit_project_link">Visit Project</a>
-				<button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Close</button><br>
+					<a class="btn btn-success" id="visit_project_link">Visit Project</a>
+					<button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Close</button><br>
 				</div>
-				<iframe onload="resize_work_iframe()" id="work-modal-iframe"></iframe>
+				
+				<div id="work_spinner" class="panel panel-default">
+					<div class="adjust">
+						<div class="loader4"></div>
+					</div>
+				</div>
+				
+				<iframe style="display:none;padding-top:10px;" onload="resize_work_iframe()" id="work-modal-iframe"></iframe>
+				
 			</div>
 			
 			<div class="modal-footer">

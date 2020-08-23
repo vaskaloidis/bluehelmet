@@ -131,5 +131,10 @@ h4.service-title {
 
 button.close {
     margin:0px;
-    padding-right:10px
+    padding-right:10px;
+}
+
+#work_spinner {
+    border: 0px solid white !important;
+    background-color: transparent !important;
 }
